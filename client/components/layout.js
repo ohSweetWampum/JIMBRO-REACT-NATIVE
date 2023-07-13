@@ -1,11 +1,10 @@
 import React from 'react';
 import BottomNav from './navbar';
-
-const Layout = ({children}) => {
+const Layout = ({children, showNav}) => {
   return (
     <>
       {children}
-      <BottomNav />
+      {showNav ? <BottomNav /> : null}
     </>
   );
 };
